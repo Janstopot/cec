@@ -1,5 +1,7 @@
 package Clases;
 
+import Otros.GeneradorID;
+
 import java.util.ArrayList;
 import java.util.List;
 

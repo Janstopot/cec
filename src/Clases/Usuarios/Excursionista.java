@@ -1,7 +1,7 @@
 package Clases.Usuarios;
 
 import Clases.Expedicion;
-import Clases.GeneradorID;
+import Otros.GeneradorID;
 
 import java.util.ArrayList;
 import java.util.List;

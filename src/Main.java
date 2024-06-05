@@ -1,17 +1,15 @@
+import Acciones.Crear;
+import Acciones.Obtener;
+import BaseDeDatos.BD;
+
 import java.util.Scanner;
+
+import static Otros.Ansi.*;
 
 public class Main {
 
     //// RESET AND COLORS
-    public static final String RESET = "\u001B[0m";
-    public static final String RED = "\u001B[31m";
-    public static final String GREEN = "\u001b[32;1m";
-    public static final String PURPLE = "\u001B[35m";
-    public static final String YELLOW = "\u001B[33m";
 
-    // RED BACKGROUND
-    public static final String ANSI_RESET_BACK = "\u001B[0m";
-    public static final String ANSI_RED_BACKGROUND = "\u001B[41m";
 
 
     public static void main(String[] args) {
@@ -35,9 +33,9 @@ public class Main {
 
     private static void imprimirMenu(){
         System.out.println(PURPLE + "Escoje una de las siguientes opciones:" + RESET);
-        System.out.println("1) Ver lista de montanas ---------> " + YELLOW + Metodos.listaMontañas.size() +  "  montanas." + RESET);
-        System.out.println("2) Ver lista de expediciones -----> " + YELLOW + Metodos.listaExpediciones.size() +  "  expediciones." + RESET);
-        System.out.println("3) Ver lista de excurisionistas --> " + YELLOW + Metodos.listaExcursionistas.size() +  "  excursionistas." + RESET);
+        System.out.println("1) Ver lista de montanas ---------> " + YELLOW + BD.listaMontañas.size() +  "  montanas." + RESET);
+        System.out.println("2) Ver lista de expediciones -----> " + YELLOW + BD.listaExpediciones.size() +  "  expediciones." + RESET);
+        System.out.println("3) Ver lista de excurisionistas --> " + YELLOW + BD.listaExcursionistas.size() +  "  excursionistas." + RESET);
         System.out.println("4) Anadir nueva montana");
         System.out.println("5) Anadir nueva expedicion");
         System.out.println("6) Anadir nuevo excursionista");
@@ -50,27 +48,27 @@ public class Main {
                 System.out.println("Cerrando programa");
                 break;
             case 1:
-                Metodos.verMontanas();
+                Obtener.verMontanas();
                 ejecutarPrograma();
                 break;
             case 2:
-                Metodos.verExpediciones();
+                Obtener.verExpediciones();
                 ejecutarPrograma();
                 break;
             case 3:
-                Metodos.verExcursionistas();
+                Obtener.verExcursionistas();
                 ejecutarPrograma();
                 break;
             case 4:
-                Metodos.nuevaMontaña();
+                Crear.nuevaMontaña();
                 ejecutarPrograma();
                 break;
             case 5:
-                Metodos.nuevaExpedicion();
+                Crear.nuevaExpedicion();
                 ejecutarPrograma();
                 break;
             case 6:
-                Metodos.nuevoExcursionista();
+                Crear.nuevoExcursionista();
                 ejecutarPrograma();
                 break;
         }

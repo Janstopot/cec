@@ -1,8 +1,8 @@
 package Clases;
 
-import Clases.Usuarios.Alpinista;
 import Clases.Usuarios.Excursionista;
 import Clases.Usuarios.Medico;
+import Otros.GeneradorID;
 
 import java.util.ArrayList;
 import java.util.Date;

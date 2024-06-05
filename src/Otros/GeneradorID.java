@@ -1,4 +1,4 @@
-package Clases;
+package Otros;
 
 public class GeneradorID {
 

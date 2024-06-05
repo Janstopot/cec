@@ -1,6 +1,7 @@
 package Clases;
 
 import Clases.Usuarios.Alpinista;
+import Otros.GeneradorID;
 
 import java.util.ArrayList;
 import java.util.List;
